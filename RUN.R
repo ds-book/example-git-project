@@ -1,5 +1,3 @@
-# 🧬 Шаблон анализа клинических данных
-
 library(tidyverse)
 library(lubridate)
 
