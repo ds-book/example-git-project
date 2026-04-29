@@ -9,7 +9,7 @@ set.seed(42)
 patient_data <- tibble(
   patient_id = paste0("P", sprintf("%04d", 1:100)),
   age = sample(18:85, 100, replace = TRUE),
-  gender = sample(c("M", "F"), 100, replace = TRUE),
+  gender = sample(c("F", "M"), 100, replace = TRUE),
   bacteria = sample(c("E.coli", "S.aureus"), 100, replace = TRUE),
   resistance = round(runif(100, 0, 100), 1)
 )
