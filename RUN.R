@@ -20,3 +20,7 @@ summary_stats <- patient_data %>%
   summarise(n = n(), mean_res = mean(resistance), .groups = "drop")
 
 print(summary_stats)
+
+# Визуализация
+ggplot(summary_stats, aes(x = bacteria, y = mean_res)) +
+  geom_col(fill = "#2E86AB") + theme_minimal()
