@@ -23,4 +23,4 @@ print(summary_stats)
 
 # Визуализация (добавить в ветке experiment/visualization)
 ggplot(summary_stats, aes(x = bacteria, y = mean_res)) +
-  geom_col(fill = "#2E8600") + theme_minimal()
+  geom_col(fill = "#2E0000") + theme_minimal()
